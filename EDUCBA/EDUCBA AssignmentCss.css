@@ -1,0 +1,385 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+/* nav {
+    background-color: black;
+    display: flex;
+    /* position: fixed; */
+    /* font-size: 18px; */
+    /* height: 30px; */
+    /* width: 100%;
+    color: white; */
+/* } */ */
+.top-header{
+    background-color: green;
+    /* height: 400px; */
+    padding: 20px;
+    padding-top: 0;
+    width: 100%;
+}
+.logo {
+    height: 50px;
+    width: 200px;
+}
+#container {
+	margin: 0 ;
+    width: 100%;
+}
+nav {
+	/* margin: 50px 0; */
+  margin: 0;
+  background-color:black;
+  display: flex;
+  height: 50px;
+}
+.list {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	/* position: relative;
+  left: 10%; */
+	}
+	
+.line {
+	display:inline-block;
+	background-color: black;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+  margin-right: 30px;
+}
+/* .childhover:hover ul {
+    background-color: white; 
+    display: block;
+    position: absolute;
+} */
+/* Hide Dropdowns by Default */
+.childhover {
+	display: none;
+	position: absolute; 
+    list-style-type: none;
+	top: 50px;
+     /* the height of the main nav */
+}
+.children {
+    /* display: block; */
+    background-color: black;
+    /* color: yellow; */
+}
+.black:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+/* .childhover:hover {
+    background-color: white;
+    color: black;
+} */
+/* Display Dropdowns on Hover */
+.line:hover > ul {
+	display:block;
+    background-color: black;
+    /* color: black; */
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	/* width:170px; */
+	/* float:none; */
+	display:list-item;
+	position: relative;
+}
+.black {
+    color: white;
+}
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  '+'; }
+li > a:only-child:after { content: ''; }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+  /* margin:0; */
+  padding:0;
+  box-sizing:border-box;
+}
+/*                    
+a{
+    text-decoration: none;
+    /* color: yellow; */
+/* } */ 
+.headline {
+    width: 65%;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.seller{
+    background-color: yellow;
+    border: 0;
+    /* height: 25px; */
+    color: brown;
+    font-size: 15px ;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.lastline {
+    display: flex;
+}
+.lastline2 {
+    display: flex;
+    /* padding: 5px; */
+    margin-left: 15px;
+}
+.lastline3{
+    margin: 0px;
+}
+.floatyt{
+    /* height: 50%; */
+    width: 30%;
+    /* background-color: blue; */
+    position: absolute;
+    top: 80px;
+    left: 67%;
+}
+.divfloat {
+    position: fixed;
+    padding: 10px 5px;
+    background-color: white;
+    color: black;
+    width: 29.5%;
+    box-shadow: 10px 10px 10px 0.1px grey;
+}
+.priceoff{
+    /* position: relative; */
+    bottom: 15px;
+    left: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.priceoff2{
+    /* position: relative; */
+    bottom: 15px;
+    left: 20px;
+    font-size: 20px;
+}
+.cart {
+    text-align: center;
+    /* background-color: green; */
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+}
+.cart:hover{
+    cursor: pointer;
+    /* border: 5px solid blueviolet; */
+    background-color: rgb(151, 0, 0);
+    
+}
+.guarantee {
+    text-align: center;
+    color: green;
+}
+.courses {
+    height: 20px;
+    /* width: 20px; */
+    padding-left: 15px;
+}
+.includes {
+    font-size: 18px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+.video {
+    height: 25px;
+    /* width: 25px; */
+    padding-left: 11px;
+}
+.center{
+    padding: 20px;
+}
+.content {
+    /* height: 100%;    */
+    width: 65%;
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    box-shadow: 10px 10px 10px 0.6px grey;
+}
+.learn {
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+.contentcenter {
+    width: 100%;
+    color: black;   
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/* .content .contentcenter {
+    overflow: hidden;
+} */
+.moreText  {
+    display: none;
+}
+.read-more-btn {
+    padding: 15px 60px; 
+    background-Color: Rgb(149, 170, 197);
+    color: Rgb(53, 49, 49); 
+    border: None;
+    outline: None;
+    font-Size: 15px;
+    cursor: Pointer;
+}
+/* text.show-more .moreText {
+    display: Inline;
+} */
+.centerhalf {
+    width: 50%;
+    font-size: 22px;
+    display: flex;
+}
+.otherhalf {
+    width: 47%;
+    font-size: 22px;
+    /* background-color: black; */
+    display: flex;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.btndiv{
+    text-align: center;
+    margin-top: 20px;
+}
+.path {
+    /* position: relative; */
+    width: 100%;
+    /* top: 10px; */
+    color: red;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-align: center; */
+    /* margin-left: 20%; */
+}
+.line1{
+    display: flex;
+    /* width: 65%; */
+    /* background-color: brown; */
+    /* height: 11em; */
+    color: black;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .number {
+    color: darkblue;
+    width: 25%;
+  }
+.box1 {
+    /* margin-bottom: 60px; */
+    width: 17%;
+    margin-right: 30px;
+    background-color: aqua;
+    box-shadow: 10px 10px 10px 0.1px grey;
+    transition: all 1s;
+    display: flex;
+}
+.box1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.boxdiv{
+    /* margin-top: 30px; */
+    /* height: 13em; */
+    padding: 20px;
+    /* margin-left: 30px; */
+    /* width: 100%; */
+    background-color: white;
+}
+.box2 {
+    width: 17%;
+    margin-right: 30px;
+    /* margin-bottom: 60px; */
+    background-color: aquamarine;
+    box-shadow: 10px 10px 10px 0.1px grey;
+    transition: all 1s;
+    display: flex;
+}
+.box2:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.box3 {
+    width: 17%;
+    margin-right: 30px;
+    /* margin-bottom: 60px; */
+    background-color: blanchedalmond;
+    box-shadow: 10px 10px 10px 0.1px grey;
+    transition: all 1s;
+    display: flex;
+}
+.box3:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.box4 {
+    width: 17%;
+    margin-right: 30px;
+    /* margin-bottom: 60px; */
+    background-color: cornsilk;
+    box-shadow: 10px 10px 10px 0.1px grey;
+    transition: all 1s;
+    display: flex;
+}
+.box4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.box5 {
+    width: 17%;
+    background-color: darkgray;
+    box-shadow: 10px 10px 10px 0.1px grey;
+    transition: all 0.7s;
+    display: flex;
+    /* margin-bottom: 60px; */
+}
+.box5:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.arrowpath {
+    padding-left: 20px;
+}
+.arrowpath2 {
+    padding-left: 5px;
+    font-size: 15px;
+    /* padding-top: 20px; */
+}
